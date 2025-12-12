@@ -13,7 +13,7 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background: url("images/DOrSUMaincampus.jpg") center/cover no-repeat fixed;
+            background: url("DOrSUMaincampus.jpg") center/cover no-repeat fixed;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -64,13 +64,13 @@
     <script>
         
         const map = {
-            FCET:  { img: 'images/FCET.jpg', name: 'Faculty of Computing Engineering and Technology (FaCET)' },
-            CRIM:  { img: 'images/CRIM.jpg', name: 'Faculty of Criminal Justice Education (FCJE)' },
-            FALS:  { img: 'images/FALS.jpg', name: 'Faculty of Agriculture & Life Sciences (FALS)' },
-            FTED:  { img: 'images/educ.jpg', name: 'Faculty of Teacher Education (FTED)' },
-            NURSING:{ img: 'images/NURSING.jpg', name: 'Faculty of Nursing & Allied Health Sciences (FNAHS)', fallback: 'images/fnahs_logo.jpg' },
-            FHSSC: { img: 'images/FHSSC.jpg', name: 'Faculty of Humanities, Social Sciences and Communication (FHuSoCom)' },
-            FGBM:  { img: 'images/FGBM.jpg', name: 'Faculty of Business & Management (FBM)' }
+            FCET:  { img: 'FCET.jpg', name: 'Faculty of Computing Engineering and Technology (FaCET)' },
+            CRIM:  { img: 'CRIM.jpg', name: 'Faculty of Criminal Justice Education (FCJE)' },
+            FALS:  { img: 'FALS.jpg', name: 'Faculty of Agriculture & Life Sciences (FALS)' },
+            FTED:  { img: 'educ.jpg', name: 'Faculty of Teacher Education (FTED)' },
+            NURSING:{ img: 'NURSING.jpg', name: 'Faculty of Nursing & Allied Health Sciences (FNAHS)', fallback: 'images/fnahs_logo.jpg' },
+            FHSSC: { img: 'FHSSC.jpg', name: 'Faculty of Humanities, Social Sciences and Communication (FHuSoCom)' },
+            FGBM:  { img: 'FGBM.jpg', name: 'Faculty of Business & Management (FBM)' }
         };
 
         function getQueryParam(key) {
@@ -95,16 +95,17 @@
                     imgEl.src = entry.fallback;
                 } else {
                     imgEl.onerror = null;
-                    imgEl.src = 'images/DOrSUMaincampus.jpg';
+                    imgEl.src = 'DOrSUMaincampus.jpg';
                 }
             };
 
         } else {
             
-            imgEl.src = 'images/DOrSUMaincampus.jpg';
+            imgEl.src = 'DOrSUMaincampus.jpg';
             imgEl.alt = 'Campus';
             nameEl.textContent = 'Selected faculty not found.';
         }
     </script>
 </body>
 </html>
+
