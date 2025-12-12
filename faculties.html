@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         html,body{height:100%;margin:0;font-family:Arial,Helvetica,sans-serif}
-        body{background:url("images/DOrSUMaincampus.jpg") center/cover no-repeat fixed;display:flex;align-items:center;justify-content:center}
+        body{background:url("DOrSUMaincampus.jpg") center/cover no-repeat fixed;display:flex;align-items:center;justify-content:center}
         body::before{content:"";position:fixed;inset:0;background:rgba(0,0,0,0.35);pointer-events:none;z-index:0}
         .page { position: relative; z-index:1; width:95%; max-width:1100px; margin:40px auto; }
         .header { display:flex;align-items:center;justify-content:space-between; gap:12px; color:#fff; margin-bottom:18px }
@@ -49,13 +49,13 @@
     <script>
         
         const faculties = [
-            { code:'CRIM', name:'Faculty of Criminal Justice Education', files:['images/CRIM.jpg','images/fcje_logo.jpg'] },
-            { code:'FALS', name:'Faculty of Agriculture & Life Sciences', files:['images/FALS.jpg','images/fals_logo.jpg'] },
-            { code:'FCET', name:'Faculty of Computing Engineering and Technology', files:['images/FCET.jpg','images/facet_logo.jpg'] },
-            { code:'FGBM', name:'Faculty of Business & Management', files:['images/FGBM.jpg','images/fbm_logo.jpg'] },
-            { code:'FHSSC',name:'Faculty of Humanities, Social Sciences and Communication', files:['images/FHSSC.jpg','images/FHuSoCom_logo.jpg'] },
-            { code:'NURSING',name:'Faculty of Nursing & Allied Health Sciences', files:['images/NURSING.jpg','images/fnahs_logo.jpg'] },
-            { code:'FTED', name:'Faculty of Teacher Education (FTED)', files:['images/educ.jpg','images/DOrSUMaincampus.jpg'] }
+            { code:'CRIM', name:'Faculty of Criminal Justice Education', files:['CRIM.jpg','fcje_logo.jpg'] },
+            { code:'FALS', name:'Faculty of Agriculture & Life Sciences', files:['FALS.jpg','fals_logo.jpg'] },
+            { code:'FCET', name:'Faculty of Computing Engineering and Technology', files:['FCET.jpg','facet_logo.jpg'] },
+            { code:'FGBM', name:'Faculty of Business & Management', files:['FGBM.jpg','fbm_logo.jpg'] },
+            { code:'FHSSC',name:'Faculty of Humanities, Social Sciences and Communication', files:['FHSSC.jpg','FHuSoCom_logo.jpg'] },
+            { code:'NURSING',name:'Faculty of Nursing & Allied Health Sciences', files:['NURSING.jpg','fnahs_logo.jpg'] },
+            { code:'FTED', name:'Faculty of Teacher Education (FTED)', files:['educ.jpg','DOrSUMaincampus.jpg'] }
         ];
 
         function getParam(k){return new URLSearchParams(window.location.search).get(k)}
@@ -80,7 +80,7 @@
                     return;
                 }
                 
-                img.onerror = null; img.src='images/DOrSUMaincampus.jpg';
+                img.onerror = null; img.src='DOrSUMaincampus.jpg';
             };
 
             wrap.appendChild(img);
@@ -109,15 +109,15 @@
             grid.appendChild(label);
 
             const uniFiles = [
-                'images/University 1st gate.jpg',
-                'images/University 2nd gate.jpg',
-                'images/University Admin.jpg',
-                'images/University Conference room.jpg',
-                'images/University Dormitory.jpg',
-                'images/University Gymnasium.jpg',
-                'images/University Gym.jpg',
-                'images/University Library.jpg',
-                'images/University Mini Forest.jpg'
+                'University 1st gate.jpg',
+                'University 2nd gate.jpg',
+                'University Admin.jpg',
+                'University Conference room.jpg',
+                'University Dormitory.jpg',
+                'University Gymnasium.jpg',
+                'University Gym.jpg',
+                'University Library.jpg',
+                'University Mini Forest.jpg'
             ];
 
             uniFiles.forEach(p => {
@@ -135,3 +135,4 @@
     </script>
 </body>
 </html>
+
