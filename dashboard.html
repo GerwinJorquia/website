@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOrSU SmartMap Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: url("images/DOrSUMaincampus.jpg") center/cover no-repeat;
+        }
+
+        .role-selection-card {
+            width: 400px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            margin: 100px auto;
+            transition: opacity 0.5s ease;
+        }
+
+        .role-selection-card.hidden {
+            display: none;
+            opacity: 0;
+        }
+
+        .role-selection-card h2 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .role-option {
+            background: #003366;
+            color: #fff;
+            padding: 15px 0;
+            border-radius: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .role-option:hover {
+            background: #0055aa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="role-selection-card" id="roleSelection">
+    <h2>GET STARTED AS</h2>
+    <div class="role-option" onclick="selectRole('student')">
+        <span>STUDENT</span>
+    </div>
+    <div class="role-option" onclick="selectRole('staff')">
+        <span>FACILITATORS/STAFF</span>
+    </div>
+    <div class="role-option" onclick="selectRole('guest')">
+        <span>GUEST</span>
+    </div>
+</div>
+
+<script>
+    
+    const roleCard = document.getElementById('roleSelection');
+    roleCard.classList.remove('hidden');
+    function selectRole(role) {
+        try { localStorage.setItem('selectedRole', role); } catch (e) { /* ignore */ }
+        
+        window.location.href = `faculties.html?role=${encodeURIComponent(role)}`;
+    }
+</script>
+
+</body>
+</html>

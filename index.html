@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOrSU SmartMap System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>DOrSU SmartMap System</h1>
+    
+    <nav class="primary-nav"> 
+        <a href="#" class="nav-link" onclick="showSection('services')">Services</a>
+        <a href="#" class="nav-link" onclick="showSection('about')">About Us</a>
+        <a href="#" class="nav-link" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search Campus Location..." class="search-input">
+        <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+    
+    <div id="facultyDropdown" class="dropdown hidden">
+        <ul>
+            <li class="with-logo">
+                <img src="images/facet_logo.jpg" class="faculty-logo">
+                Faculty of Computing Engineering and Technology (FaCET)
+            </li>
+            <li class="with-logo">
+                <img src="images/fcje_logo.jpg" class="faculty-logo">
+                Faculty of Criminal Justice Education (FCJE)
+            </li>
+            <li class="with-logo">
+                <img src="images/fals_logo.jpg" class="faculty-logo">
+                Faculty of Agriculture & Life Sciences (FALS)
+            </li>
+            <li class="with-logo">
+                <img src="images/fted_logo.jpg" class="faculty-logo">
+                Faculty of Teacher Education (FTED)
+            </li>
+            <li class="with-logo">
+                <img src="images/fnahs_logo.jpg" class="faculty-logo">
+                Faculty of Nursing & Allied Health Sciences (FNAHS)
+            </li>
+            <li class="with-logo">
+                <img src="images/FHuSoCom_logo.jpg" class="faculty-logo">
+                Faculty of Humanities, Social Sciences and Communication (FHuSoCom)
+            </li>
+            <li class="with-logo">
+                <img src="images/fbm_logo.jpg" class="faculty-logo">
+                Faculty of Business & Management (FBM)
+            </li>
+        </ul>
+    </div>
+
+    <div class="auth-links">
+        <a href="register.html" class="auth-btn">SIGN UP</a>
+    </div>
+</header>
+
+<div class="hero-section" id="homeSection">
+    <div class="map-overlay home-welcome">
+        <h2>Welcome to DOrSU SmartMap System</h2>
+        <p>Your navigational guide to the Davao Oriental State University Main Campus.</p>
+    </div>
+</div>
+
+<section id="services" class="info-section hidden">
+    <h2>Our Services</h2>
+    <p>
+        The DOrSU Main Campus SmartMap System is a comprehensive navigation and information system 
+        designed to guide students, staff, and visitors seamlessly across the campus grounds. Its 
+        core services center around providing location tracking and efficient, step-by-step routing 
+        to various points of interest, including specific buildings, classrooms, amenities, and 
+        University Admin. Beyond navigation, the app enhances campus life by offering a searchable 
+        directory of locations, potentially integrating information about ongoing campus events, and 
+        utilizing visual, user-friendly interfaces to ensure ease of use and improved accessibility 
+        for everyone navigating the Davao Oriental State University Main Campus.
+    </p>
+</section>
+
+<section id="contact" class="info-section hidden">
+    <h2>Contact Us</h2>
+    <p>You may reach the admin office at:</p>
+    <ul>
+        <li>🌐 https://www.DOrSUAdminOfficeMainCampus.com</li>
+        <li>📧 DOrSUmaincampus@email.edu.ph</li>
+    </ul>
+</section>
+
+<section id="about" class="info-section hidden">
+    <h2>About the Developer</h2>
+
+    <div class="dev-card">
+        <img src="images/jorquia.jpg" alt="Developer Photo">
+        <div class="dev-details">
+            <h3>Gerwin Jorquia</h3>
+            <p class="dev-role">Developer • BSIT 2nd Year</p>
+            <ul class="dev-info">
+                <li><strong>Age:</strong> 21</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Location:</strong> Brgy. Mamali, City of Mati, Davao Oriental</li>
+            </ul>
+            <p class="dev-tagline">“Building smart digital solutions for a smarter DOrSU and helps students and visitors navigate the campus easily.”</p>
+        </div>
+    </div>
+
+    <div class="dev-card alt-style">
+        <img src="images/cabuenas.jpg" alt="Developer Photo">
+        <div class="dev-details">
+            <h3>Adrianne Rodjem P. Cabueñas</h3>
+            <p class="dev-role">Developer • BSIT 2nd Year</p>
+            <ul class="dev-info">
+                <li><strong>Age:</strong> 19</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Location:</strong> Belsonda, City of Mati, Davao Oriental</li>
+            </ul>
+            <p class="dev-quote">“Turning ideas into code, and code into meaningful solutions.”</p>
+        </div>
+    </div>
+
+    <div class="dev-card unique-francisco">
+        <img src="images/francisco.jpg" alt="Developer Photo">
+        <div class="dev-details">
+            <h3>Kent Joshua Q. Francisco</h3>
+            <p class="dev-role">Developer • BSIT 2nd Year</p>
+            <ul class="dev-info">
+                <li><strong>Age:</strong> 21</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Location:</strong> Magsaysay 17-4P, City of Mati, Davao Oriental</li>
+            </ul>
+            <p>✦ “Shaping functionality with clean code and inspired creativity.” ✦</p>
+        </div>
+    </div>
+
+    <div class="dev-card unique-banzali">
+        <img src="images/Banzale.jpg" alt="Developer Photo">
+        <div class="dev-details">
+            <h3>Eman M. Banzali</h3>
+            <p class="dev-role">Developer • BSIT 2nd Year</p>
+            <ul class="dev-info">
+                <li><strong>Age:</strong> 20</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Location:</strong> NHA Dahican, City of Mati, Davao Oriental</li>
+            </ul>
+            <p>✦ “Coding with passion and creating smart solutions for DOrSU.” ✦</p>
+        </div>
+    </div>
+</section>
+
+<div class="login-sidebar">
+    <div class="login-form-container">
+        <h3>Login</h3>
+        <div class="login-input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="login-input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button class="login-btn" id="loginBtn">LOGIN</button>
+        
+        <p class="social-login-text">Log in with:</p>
+        <div class="social-login-links">
+            <a href="#" class="social-icon instagram" aria-label="Login with Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon twitter" aria-label="Login with Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon google" aria-label="Login with Google"><i class="fab fa-google"></i></a>
+            <a href="#" class="social-icon skype" aria-label="Login with Skype"><i class="fab fa-skype"></i></a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
